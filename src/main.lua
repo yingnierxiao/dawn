@@ -2,8 +2,10 @@ local ej = require "ejoy2d"
 local fw = require "ejoy2d.framework"
 local pack = require "ejoy2d.simplepackage"
 
-local shader = require "dawn_shader"
-local scene = require "dawn_scene"
+local sceneName = "sea"
+
+local shader = require(sceneName.."_shader")
+local scene = require(sceneName.."_scene")
 
 -- init
 local function init()
